@@ -16,35 +16,32 @@
 
          <div class="row">
             <% if (arreglo.length){ %>
-              <% arreglo.forEach((this)=>{%>
+              <% arreglo.forEach((value)=>{%>
                 
                 <div class="col-md-3">
                   <div class="card">
                     <div class="card-body">
                       <div class="card-title">
-                        <img src="https://<%- this.image %>" alt="Fotito" width="220" height="60">
-
                         <div class="card">
                             <div class="card-body">
-        
                             <div class="row">
                                 <div class="col-md-13">
-                                    <p class="card-title text-center font-weight-bold">  <%=this.brand%></p>
+                                    <p class="card-title text-center font-weight-bold">  <%=value.brand%></p>
                                 </div>
-                                    :  <%=this.description%>
+                                    :  <%=value.description%>
                             </div>
 
                             
-                            <% if (this.palindromo==1){ %>
+                            <% if (value.palindromo==1){ %>
                                 <div class="row">
                                     <h3>
-                                      $<%=this.mitad%>
+                                      $<%=value.half%>
                                     <span class="badge badge-pill badge-danger">50%</span>
                                   </h3>
                                 </div>
-                                <strike>$<%=this.price%></strike>
+                                <strike>$<%=value.price%></strike>
                             <% }else{ %>
-                              <h3>$<%=this.price%></h3>
+                              <h3>$<%=value.price%></h3>
                             <% } %>
 
                         </div>
@@ -76,14 +73,12 @@
     //<div class="container-fluid" id="about">
       <div class="row bg-dark text-white p-5 text-center">
         <div class="col-sm-6">
-          <i class="fab fa-youtube fa-3x"></i>  
         </div>
         <div class="col-sm-6">
           <h3>08 - 26 - 2020</h3>
           <p>
             <span>Mondineitor</span>
           </p>
-          <i class="fa fa-cog fa-spin fa-3x fa-fw"></i>
           <span class="sr-only"></span>
           
         </div>

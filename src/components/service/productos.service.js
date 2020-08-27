@@ -1,6 +1,5 @@
- const Work = require('../../model/modelo')
+ const Work = require('../../model/modelo');
 
-/*  ejecuta el bice servicio api externa*/
 
 class RunService{
 
@@ -19,7 +18,6 @@ class RunService{
         return array_1.concat(array_2);
     }
 
-    
     static async executeGetMongoId(id){
         let array=[]
         try{

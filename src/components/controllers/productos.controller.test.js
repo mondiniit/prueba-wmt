@@ -6,7 +6,7 @@ beforeEach(() => {});
 describe('prueba1', () => {
 
     /** @test {controller.executeTransfer} */
-    it('retorna un mensaje de éxito 200', async () => {
+    it('200', async () => {
         RunFacade.executeTransfer = jest.fn().mockImplementation(() =>
            Promise.resolve(200),
         );
