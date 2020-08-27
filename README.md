@@ -31,9 +31,8 @@ Run start: `npm run start`
 
 That would launch an web application on port `8080` by default, if you're running into port conflict, just modify the port in `src/index.js` or stop the existing application one on `8080`.
 
-After the launch, you could access the application via sending http requests to the following endpoint.
-for local use:
+Local URL:
 http://localhost:8080/api/v1/productos/busqueda
 
 Heroku URL:
-
+-
