@@ -29,7 +29,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(app.get('ruta'), require('../src/routes/rutas')  )
 
 mongoose
-    .connect(`mongodb+srv://marco:Marko123@cluster0.icf6j.mongodb.net/marco?retryWrites=true&w=majority`, {
+    .connect(`mongodb+srv://mongodb+srv://mondini:mondini@cluster0.gonfv.gcp.mongodb.net/<dbname>?retryWrites=true&w=majority`, {
       useUnifiedTopology: true,
       useNewUrlParser: true,
       socketTimeoutMS: 5000 
