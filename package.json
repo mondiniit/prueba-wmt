@@ -4,8 +4,9 @@
   "description": "Shopping Cart coding problem",
   "main": "index.js",
   "scripts": {
+    "start": "node src/index.js",
     "test": "jest",
-    "start": "nodemon src/index.js"
+    "dev": "nodemon src/index.js"
   },
   "author": "Thoughtworks",
   "license": "ISC",
