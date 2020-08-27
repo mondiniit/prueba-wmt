@@ -1,13 +1,13 @@
 const controller = require('./productos.controllers');
-const EjecutarFacade = require('../facade/productos.facade');
+const RunFacade = require('../facade/productos.facade');
 
 beforeEach(() => {});
 
-describe('prueba1 Jest wallMart controlador', () => {
+describe('prueba1', () => {
 
     /** @test {controller.executeTransfer} */
     it('retorna un mensaje de éxito 200', async () => {
-        EjecutarFacade.executeTransfer = jest.fn().mockImplementation(() =>
+        RunFacade.executeTransfer = jest.fn().mockImplementation(() =>
            Promise.resolve(200),
         );
         const request={query:{title:''}}  

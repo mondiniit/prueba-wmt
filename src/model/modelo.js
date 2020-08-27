@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const Esquema = Schema({
+const Work = Schema({
 	"id": Number,
 	"brand": String,
 	"description": String,
@@ -11,6 +11,6 @@ const Esquema = Schema({
 	"palindromo": Number
 });
 
-module.exports = mongoose.model('wallmart', Esquema,'wallmart');
+module.exports = mongoose.model('wallmart', Work,'wallmart');
 
 
