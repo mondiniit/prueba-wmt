@@ -21,7 +21,6 @@ app.use(bodyParser.urlencoded({
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-/* variables de entorno */
 app.set('port',process.env.PORT || puerto);
 app.set('user',process.env.USER || usuario);
 app.set('password',process.env.PASSWORD || clave);
@@ -30,7 +29,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(app.get('ruta'), require('../src/routes/rutas')  )
 
 mongoose
-    //.connect(`mongodb+srv://${app.get('user')}:${app.get('password')}@cluster0.icf6j.mongodb.net/marco?retryWrites=true&w=majority`, {
     .connect(`mongodb+srv://marco:Marko123@cluster0.icf6j.mongodb.net/marco?retryWrites=true&w=majority`, {
       useUnifiedTopology: true,
       useNewUrlParser: true,

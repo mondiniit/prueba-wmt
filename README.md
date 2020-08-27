@@ -36,5 +36,4 @@ for local use:
 http://localhost:8080/api/v1/productos/busqueda
 
 Heroku URL:
-https://prueba-wat.herokuapp.com
 
