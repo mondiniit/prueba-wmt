@@ -1,0 +1,19 @@
+body {
+  background: rgba(132, 11, 212, 0.712); 
+  background: -webkit-linear-gradient(to right, #348AC7, rgb(109, 49, 165));
+  background: linear-gradient(to right,  rgb(195, 12, 219),rgb(3, 233, 3)); 
+}
+
+.navbar-brand {
+  font-family: 'Spicy Rice', cursive;
+  font-size: 2.0rem;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  font-family: 'Spicy Rice', cursive;
+}
+
+header img {
+  width: 60%;
+}
