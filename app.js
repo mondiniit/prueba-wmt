@@ -26,7 +26,7 @@ app.set('user',process.env.USER || usuario);
 app.set('password',process.env.PASSWORD || clave);
 app.set('ruta',process.env.RUTA || ruta);
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(app.get('ruta'), require('../src/routes/rutas')  )
+app.use(app.get('ruta'), require('./routes/rutas')  )
 
 mongoose
     .connect(`mongodb+srv://marco:Marko123@cluster0.icf6j.mongodb.net/marco?retryWrites=true&w=majority`, {
